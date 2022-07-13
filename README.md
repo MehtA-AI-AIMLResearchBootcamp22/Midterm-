@@ -1,2 +1,2 @@
 # Midterm-
-Lily Shi, Olivia Guo, Mushfiq Mahim, Grace Choi
+https://mehta-ai-aimlresearchbootcamp22.github.io/Midterm-/
