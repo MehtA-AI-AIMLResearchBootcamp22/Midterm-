@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+# Midterm project: predicting the gender of the author of a text
 
-You can use the [editor on GitHub](https://github.com/MehtA-AI-AIMLResearchBootcamp22/Midterm-/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Analysis
+We decided to use the length of each feature, part of speech tagging, and tf-idf to determine if the author of a text is male or female. Because men tend to use more abbreviations and write more concisely than women, we thought that that could be reflected in the length of sentences the authors used. Also, men used more determiners (words like "the", "a", and "as") and more adjectives than women, which is why we thought part of speech tagging would be useful. Finally, because men and women have different writing styles (women try to create a relationship between the reader and the writer, while men are more focused on giving facts), we decided to use tf-idf, which determines how important a word is to the document, since in different styles of writing, different words would be important.
 
-### Markdown
+When the length of each sentence was used as the only feature, it gave an accuracy of around 60%, meaning the model is learning, but it's not learning much. When the only feature used was the part of speech tagging, the accuracy was [FILL IN LATER]. When tf-idf was the only feature used, the accuracy was around 90%, so it was already pretty accurate.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Another feature that we tested was Bag of Words, which finds the frequency of each word. This gave an accuracy of around 75%, but we ultimately decided not to use it because most likely, the words that showed up the most, like determiners, would already be covered with part of speech tagging.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MehtA-AI-AIMLResearchBootcamp22/Midterm-/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Code
