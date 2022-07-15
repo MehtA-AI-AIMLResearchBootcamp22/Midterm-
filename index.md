@@ -1,5 +1,7 @@
-# Midterm project: predicting the gender of the author of a text
+# Midterm Project: Predicting the Gender of the Author of a Text
 
+## Problem
+Given a dataset of eleven scientific texts written by both male and female authors, we were tasked with building a machine learning model that was capable of predicting the gender of the author of a similar book. We not only aimed to create a model with high accuracy, but also endeavored to find which features contributed most to the prediction of the model, which would reveal the inherent difference between male and female writing. 
 
 ## Analysis
 We decided to use the length of each feature, part of speech tagging, and tf-idf to determine if the author of a text is male or female. Because men tend to use more abbreviations and write more concisely than women, we thought that that could be reflected in the length of sentences the authors used. Also, men used more determiners (words like "the", "a", and "as") and more adjectives than women, which is why we thought part of speech tagging would be useful. Finally, because men and women have different writing styles (women try to create a relationship between the reader and the writer, while men are more focused on giving facts), we decided to use tf-idf, which determines how important a word is to the document, since in different styles of writing, different words would be important.
