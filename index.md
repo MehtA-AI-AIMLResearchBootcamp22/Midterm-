@@ -24,10 +24,44 @@ Ultimately, our training and testing datasets consisted of TF-IDF vectors, sente
 We tested several different models including SVM(support-vector-machine), neural network, and logistic regression. In the end, we decided to use the SVM because it yielded the highest accuracy. The linear SVM is widely regarded as one of the best text-classification algorithms, and this is because it can handle the huge number of features given by the vectorization and it works well with sparse matrices. 
 
 ## Results
-
+Accuracy: 90% - 96% 
+Important features:
+  Specific words (female) - "child" 
+                            "creature" 
+                            "exterior" 
+                            "figure" 
+                            "god" 
+                            "madam"
+                            "make"
+                            "onely"
+                            "sensitive"
+                            "woman" 
+                            
+   Specific words (male) - "begin"
+                           "diver"
+                           "experiment"
+                           "faculty"
+                           "find"
+                           "knowledge"
+                           "mind"
+                           "ought"
+                           "self"
+                           "virtue"
+                   
+   Parts of speech (female) - pronouns
+                              interjections (hey, oh, yikes, etc.)
+                              modals (can, should, must, etc.)
+                              adjectives
+                              adverbs
+                              proper nouns
+                              
+   Parts of speech (male) - comparative adverbs (bigger, better)
+                            superlative adverbs (biggest, best)
+                            prepositions
+                            nouns
 
 ## Analysis
-We decided to use the length of each feature, part of speech tagging, and tf-idf to determine if the author of a text is male or female. Because men tend to use more abbreviations and write more concisely than women, we thought that that could be reflected in the length of sentences the authors used. Also, men used more determiners (words like "the", "a", and "as") and more adjectives than women, which is why we thought part of speech tagging would be useful. Finally, because men and women have different writing styles (women try to create a relationship between the reader and the writer, while men are more focused on giving facts), we decided to use tf-idf, which determines how important a word is to the document, since in different styles of writing, different words would be important.
+Because men tend to use more abbreviations and write more concisely than women, we thought that that could be reflected in the length of sentences the authors used. Also, men used more determiners (words like "the", "a", and "as") and more adjectives than women, which is why we thought part of speech tagging would be useful. Finally, because men and women have different writing styles (women try to create a relationship between the reader and the writer, while men are more focused on giving facts), we decided to use tf-idf, which determines how important a word is to the document, since in different styles of writing, different words would be important.
 
 When the length of each sentence was used as the only feature, it gave an accuracy of around 60%, meaning the model is learning, but it's not learning much, which is why we decided to include it. After running our model, we determined that both part of speech and determining the importance of words were most important to our model.
 
