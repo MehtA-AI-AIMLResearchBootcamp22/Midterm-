@@ -1,4 +1,4 @@
-# Midterm Project: Predicting the Gender of the Author of a Text
+## Predicting the Gender of the Author of a Text
 
 ## Problem
 Given a dataset of eleven scientific texts written by both male and female authors, we were tasked with building a machine learning model that was capable of predicting the gender of the author of a similar book. We not only aimed to create a model with high accuracy, but also endeavored to find which features contributed most to the prediction of the model, which would reveal the inherent difference between male and female writing. 
