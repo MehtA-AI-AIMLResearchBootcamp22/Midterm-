@@ -4,7 +4,7 @@
 Given a dataset of eleven scientific texts written by both male and female authors, we were tasked with building a machine learning model that was capable of predicting the gender of the author of a similar book. We not only aimed to create a model with high accuracy, but also endeavored to find which features contributed most to the prediction of the model, which would reveal the inherent difference between male and female writing. 
 
 ## Preprocessing
-We had a dataset of six books with female authors given to us by the professors and five books with male authors taken from Project Gutenberg. We had to make the data as clean as possible in order for the model to work best. 
+We had a dataset of six books with female authors given to us by WWP(Women Writer's Project) and five books with male authors taken from Project Gutenberg. We had to make the data as clean as possible in order for the model to work best. 
 These are our preprocessing steps:
 1. Remove irrelant text (footnotes, website formatting, etc.)
 2. Split the books into groups of ten sentences each, to greatly increase the size of our dataset
@@ -67,7 +67,7 @@ Looking at the most important words for both female and male authors, it seems a
 
 The model observed some specific differences in part of speech usage between men and women, such as women using more interjections, modals, adjectives, and proper nouns, while men use more comparative adverbs and superlative adverbs. All of these can be used to tell the gender of the author of a book. Although I expected men to write shorter, more concise sentences, the length of the sentence appeared to not matter too much, only leaning slightly towards the female side.
 
-In general, based on these features, I suspect that an important part of the difference between male and female writing is influenced heavily by the scarcity of female authors at that time. As I observed when looking through the female texts, almost all the books contained a section explaining why and how they recieved education and wrote the book as a female, as well as addressing their female audience and in general making many references to genderl. Because female writers were so scarce back then, these authors probably were compelled to justify their writing by making references to their gender in the book. On the other hand, the male authors' books usually did not contain any part or reference to the author's gender, or gender in general. This is supported by the use of the female authors of the words "woman" and "madam", as well as their use of pronouns. 
+In general, based on these features, I suspect that an important part of the difference between male and female writing is influenced heavily by the scarcity of female authors at that time. As I observed when looking through the female texts, almost all the books contained a section explaining why and how they recieved education and wrote the book as a female, as well as addressing their female audience and in general making many references to gender. Because female writers were so scarce back then, these authors probably were compelled to justify their writing by making references to their gender in the book. On the other hand, the male authors' books usually did not contain any part or reference to the author's gender, or gender in general. This is supported by the use of the female authors of the words "woman" and "madam", as well as their use of pronouns. 
 
 
 ## Code
