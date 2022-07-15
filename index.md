@@ -25,39 +25,41 @@ We tested several different models including SVM(support-vector-machine), neural
 
 ## Results
 Accuracy: 90% - 96% 
+
 Important features:
-  Specific words (female) - "child" 
-                            "creature" 
-                            "exterior" 
-                            "figure" 
-                            "god" 
-                            "madam"
-                            "make"
-                            "onely"
-                            "sensitive"
-                            "woman" 
+
+  Specific words (female) - "child", 
+                            "creature", 
+                            "exterior", 
+                            "figure", 
+                            "god", 
+                            "madam",
+                            "make",
+                            "onely",
+                            "sensitive",
+                            "woman"
                             
-   Specific words (male) - "begin"
-                           "diver"
-                           "experiment"
-                           "faculty"
-                           "find"
-                           "knowledge"
-                           "mind"
-                           "ought"
-                           "self"
+   Specific words (male) - "begin",
+                           "diver",
+                           "experiment",
+                           "faculty",
+                           "find",
+                           "knowledge",
+                           "mind",
+                           "ought",
+                           "self",
                            "virtue"
                    
-   Parts of speech (female) - pronouns
-                              interjections (hey, oh, yikes, etc.)
-                              modals (can, should, must, etc.)
-                              adjectives
-                              adverbs
+   Parts of speech (female) - pronouns,
+                              interjections (hey, oh, yikes, etc.),
+                              modals (can, should, must, etc.),
+                              adjectives,
+                              adverbs,
                               proper nouns
                               
-   Parts of speech (male) - comparative adverbs (bigger, better)
-                            superlative adverbs (biggest, best)
-                            prepositions
+   Parts of speech (male) - comparative adverbs (bigger, better),
+                            superlative adverbs (biggest, best),
+                            prepositions,
                             nouns
 
 ## Analysis
