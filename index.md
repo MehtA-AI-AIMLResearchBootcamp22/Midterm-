@@ -4,7 +4,7 @@
 Given a dataset of eleven scientific texts written by both male and female authors, we were tasked with building a machine learning model that was capable of predicting the gender of the author of a similar book. We not only aimed to create a model with high accuracy, but also endeavored to find which features contributed most to the prediction of the model, which would reveal the inherent difference between male and female writing. 
 
 ## Preprocessing
-We had a dataset of six books with female authors given to us by [insert professor names] and five books with male authors taken from Project Gutenberg. We had to make the data as clean as possible in order for the model to work best. 
+We had a dataset of six books with female authors given to us by the professors and five books with male authors taken from Project Gutenberg. We had to make the data as clean as possible in order for the model to work best. 
 These are our preprocessing steps:
 1. Remove irrelant text (footnotes, website formatting, etc.)
 2. Split the books into groups of ten sentences each, to greatly increase the size of our dataset
