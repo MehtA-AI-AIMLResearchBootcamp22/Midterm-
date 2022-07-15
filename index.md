@@ -20,6 +20,12 @@ We now had several huge vectors of TF-IDF, but we also decided to use the length
 
 Ultimately, our training and testing datasets consisted of TF-IDF vectors, sentence length, and number of parts of speech.
 
+## Model
+We tested several different models including SVM(support-vector-machine), neural network, and logistic regression. In the end, we decided to use the SVM because it yielded the highest accuracy. The linear SVM is widely regarded as one of the best text-classification algorithms, and this is because it can handle the huge number of features given by the vectorization and it works well with sparse matrices. 
+
+## Results
+
+
 ## Analysis
 We decided to use the length of each feature, part of speech tagging, and tf-idf to determine if the author of a text is male or female. Because men tend to use more abbreviations and write more concisely than women, we thought that that could be reflected in the length of sentences the authors used. Also, men used more determiners (words like "the", "a", and "as") and more adjectives than women, which is why we thought part of speech tagging would be useful. Finally, because men and women have different writing styles (women try to create a relationship between the reader and the writer, while men are more focused on giving facts), we decided to use tf-idf, which determines how important a word is to the document, since in different styles of writing, different words would be important.
 
